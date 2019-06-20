@@ -37,8 +37,8 @@ body {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
-
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   transition: max-height 0.2s ease-out;
 }
 
@@ -56,7 +56,7 @@ body {
 /* Hide the images by default */
 .mySlides {
   display: block;
-  overflow: auto;
+  overflow: scroll;
 }
 
 /* Next & previous buttons */
