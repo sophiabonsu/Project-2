@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Beautiful Rentals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
+  </head>
+  <body>
+    <!--
+      <script src="jquery.js"></script>
+      <script src="main.js"></script>
+    -->
+
+    <button class="accordion">Home</button>
+    <div class="panel">
+      <p>
+        Welcome to your slice of heaven! Here you will find beautiful rentals
+      </p>
+    </div>
+
+    <button class="accordion">Our Mission</button>
+    <div class="panel">
+      <p>Our goal is to provide beautiful homes for everyone</p>
+    </div>
+
+    <button class="accordion">Contact Us</button>
+    <div class="panel">
+      <p>
+        You can leave your name and email and we will contact you with more
+        information
+      </p>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container"></div>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      1 / 3 <img src="house1.jpeg" style="width:100%" />
+      <div class="text">Ranch</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="house2.jpeg" style="width:100%" />
+      <div class="text">Castle</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="house3.jpeg" style="width:100%" />
+      <div class="text">Glass</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <form
+      name="myForm"
+      action="/action_page.php"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      Name: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+    <form
+      name="myForm"
+      action="/action_page.php"
+      onsubmit="return validateEmail()"
+      method="post"
+    >
+      Email: <input type="text" name="emailName" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
