@@ -42,3 +42,9 @@ function validateForm() {
     alert("Email must be filled out");
     return false;
   }
+
+
+  let forming = document.getElementsByTagName('form');
+  let para = document.createElement("p");
+  para.innerHTML="Try a valid email";
+  forming.appendChild(para);
