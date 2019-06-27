@@ -1,7 +1,13 @@
 body {
-  background-color: #70566d;
+  background-color: #e2c2ff;
 }
-
+.header {
+  background-color: #70566d;
+  color: white;
+  text-align: center;
+  font-size: 75px;
+  font-style: italic;
+}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   font-size: 20px;
@@ -37,8 +43,8 @@ body {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
-
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   transition: max-height 0.2s ease-out;
 }
 
@@ -56,7 +62,7 @@ body {
 /* Hide the images by default */
 .mySlides {
   display: block;
-  overflow: auto;
+  overflow: scroll;
 }
 
 /* Next & previous buttons */
